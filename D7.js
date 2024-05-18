@@ -84,6 +84,7 @@
 // };
 
 // console.log(arrayDispari(array));
+
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
   {
@@ -204,6 +205,17 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
+const filmPiuVecchio = function (film) {
+  let x = 3000;
+  film.forEach((element) => {
+    if (element.Year < x) {
+      x = element.Year;
+    }
+  });
+  return x;
+};
+// i blockquote fatti con alt+ 98 su tastierino numerico
+console.log(`Il film più vecchio ha data ${filmPiuVecchio(movies)}`);
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
