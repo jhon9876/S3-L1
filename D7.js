@@ -205,29 +205,34 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
-const filmPiuVecchio = function (film) {
-  let x = 3000;
-  film.forEach((element) => {
-    if (element.Year < x) {
-      x = element.Year;
-    }
-  });
-  return x;
-};
-// i blockquote fatti con alt+ 98 su tastierino numerico
-console.log(`Il film più vecchio ha data ${filmPiuVecchio(movies)}`);
+// const filmPiuVecchio = function (film) {
+//   let x = 3000;
+//   film.forEach((element) => {
+//     if (element.Year < x) {
+//       x = element.Year;
+//     }
+//   });
+//   return x;
+// };
+// // i blockquote fatti con alt+ 98 su tastierino numerico
+// console.log(`Il film più vecchio ha data ${filmPiuVecchio(movies)}`);
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
+// const numeroFilm = (numero) => numero.length;
 
+// console.log("IL NUMERO TOTALE DI FILM E': ", numeroFilm(movies));
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
+// const titoliFilm = movies.map((titoli) => titoli.Title);
 
+// console.log("Titoli dei film: ", titoliFilm);
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
-
+// const millennioCorrente = movies.filter((film) => film.Year > 2000);
+// console.log("Film del nuovo millennio: ", millennioCorrente);
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
@@ -235,7 +240,13 @@ console.log(`Il film più vecchio ha data ${filmPiuVecchio(movies)}`);
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
+// const specificoFilm = movies.find((film) => film.imdbID === "tt4154796");
 
+// console.log("Il film cercato è: ", specificoFilm);
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
+
+// const indiceFilm = movies.findIndex((film) => film.Year === "2019");
+
+// console.log(`Indice primo film uscito nel 2019: ${indiceFilm} `);
